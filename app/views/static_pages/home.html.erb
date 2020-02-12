@@ -10,7 +10,11 @@
     sample application.
   </h2>
 
-  <%= link_to "This does nothing for now", '#', class: "btn btn-lg btn-primary" %>
+  <%= link_to "Roll the dice!", '/home', class: "btn btn-lg btn-primary" %>
+
+  <h2>Dice Result</h2>
+    <p><%= @result %></p>
+
 </div>
 
 <%= link_to image_tag("rails.png", alt: "Rails logo"),
