@@ -1,0 +1,47 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: MyString
+  acft_model: MyString
+  acft_ident: MyString
+  from: MyString
+  to: MyString
+  sel: 1.5
+  mel: 1.5
+  ground: 1.5
+  dual_received: 1.5
+  pic: 1.5
+  day: 1.5
+  night: 1.5
+  cross_country: 1.5
+  actual_inst: 1.5
+  sim_inst: 1.5
+  no_inst_appr: 1
+  landings_day: 1
+  landings_night: 1
+  total_duration: 1.5
+  remarks: MyString
+  instructor: MyString
+
+two:
+  date: MyString
+  acft_model: MyString
+  acft_ident: MyString
+  from: MyString
+  to: MyString
+  sel: 1.5
+  mel: 1.5
+  ground: 1.5
+  dual_received: 1.5
+  pic: 1.5
+  day: 1.5
+  night: 1.5
+  cross_country: 1.5
+  actual_inst: 1.5
+  sim_inst: 1.5
+  no_inst_appr: 1
+  landings_day: 1
+  landings_night: 1
+  total_duration: 1.5
+  remarks: MyString
+  instructor: MyString
