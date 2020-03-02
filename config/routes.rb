@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'log_entry/new'
+
   get 'users/new'
 
   get  '/about',   to: 'static_pages#about'
