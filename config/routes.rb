@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
-  get 'log_entry/new'
 
-  get 'users/new'
+  root 'static_pages#home'
 
   get  '/about',   to: 'static_pages#about'
 
@@ -11,6 +10,8 @@ Rails.application.routes.draw do
 
   get '/roll', to: 'static_pages#roll'
 
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  root 'static_pages#home'
+  get '/index', to: 'log_entry#index'
+
+  resources :log_entry
+
 end
