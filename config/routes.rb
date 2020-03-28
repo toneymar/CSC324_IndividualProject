@@ -12,6 +12,8 @@ Rails.application.routes.draw do
 
   get '/index', to: 'log_entry#index'
 
+  get '/new', to: 'log_entry#new'
+
   resources :log_entry
 
 end
