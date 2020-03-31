@@ -1,0 +1,28 @@
+<% provide(:title, 'Add a Flight') %>
+<h1>Add a Flight</h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for(@entry) do |f| %>
+      <%= f.label :date %>
+      <%= f.text_field :date %>
+
+      <%= f.label :acft_model, "Aircraft Model" %>
+      <%= f.text_field :acft_model %>
+
+      <%= f.label :acft_ident, "Aircraft Identification" %>
+      <%= f.text_field :acft_ident %>
+
+      <%= f.label :from %>
+      <%= f.text_field :from %>
+
+      <%= f.label :to %>
+      <%= f.text_field :to %>
+
+      <%= f.label :total_duration, "Total Duration" %>
+      <%= f.text_field :total_duration %>
+
+      <%= f.submit "Save", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>

@@ -10,8 +10,10 @@ Rails.application.routes.draw do
 
   get '/roll', to: 'static_pages#roll'
 
-  get '/index', to: 'log_entry#index'
+  get '/index', to: 'log_entries#index'
 
-  resources :log_entry
+  get '/new', to: 'log_entries#new'
+
+  resources :log_entries
 
 end
