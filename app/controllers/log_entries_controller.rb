@@ -16,10 +16,20 @@ class LogEntriesController < ApplicationController
   end
 end
 
+  def destroy
+    LogEntry.find(params[:id]).destroy
+    redirect_to '/log'
+  end
+
+  def edit
+    @entry = LogEntry.find(params[:id])
+  end
+
+end
+
 private
 
   def entry_params
     params.require(:log_entry).permit(:date, :acft_model, :acft_ident,
                                  :from, :to, :total_duration)
  end
-end

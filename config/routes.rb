@@ -14,6 +14,8 @@ Rails.application.routes.draw do
 
   get '/new', to: 'log_entries#new'
 
+  get '/edit', to: 'log_entries#edit'
+
   resources :log_entries
 
 end
