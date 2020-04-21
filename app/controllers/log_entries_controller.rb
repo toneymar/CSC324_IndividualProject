@@ -7,6 +7,10 @@ class LogEntriesController < ApplicationController
     @entries = LogEntry.all
   end
 
+  def details
+    @entry = LogEntry.find(params[:id])
+  end
+
   def create
   @entry = LogEntry.new(entry_params)    # Not the final implementation!
   if @entry.save

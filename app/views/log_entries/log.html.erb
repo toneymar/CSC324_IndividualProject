@@ -55,6 +55,7 @@
       <td><%= entry.landings_night %></td>
       <% end %>
       <td><%= entry.total_duration %></td>
+      <td><%= link_to "details", '/details' %></td>
       <td><%= link_to "edit", '/edit' %></td>
       <td><%= link_to "delete", entry, method: :delete, data: { confirm: "You sure?" } %></td>
       <% if false %>

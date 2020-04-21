@@ -16,6 +16,8 @@ Rails.application.routes.draw do
 
   get '/edit', to: 'log_entries#edit'
 
+  get '/details', to: 'log_entries#details'
+
   resources :log_entries
 
 end
