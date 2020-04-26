@@ -1,4 +1,5 @@
 class LogEntriesController < ApplicationController
+
   def new
     @entry = LogEntry.new
   end
@@ -7,7 +8,7 @@ class LogEntriesController < ApplicationController
     @entries = LogEntry.all
   end
 
-  def details
+  def show
     @entry = LogEntry.find(params[:id])
   end
 
@@ -29,11 +30,21 @@ end
     @entry = LogEntry.find(params[:id])
   end
 
+  def update
+    @entry = LogEntry.find(params[:id])
+    if @entry.update_attributes(entry_params)
+      redirect_to '/log'
+    else
+      render 'edit'
+    end
+  end
+
 end
 
 private
 
   def entry_params
-    params.require(:log_entry).permit(:date, :acft_model, :acft_ident,
-                                 :from, :to, :total_duration)
+    params.require(:log_entry).permit(:date, :acft_model, :acft_ident, :from, :to, :sel, :mel, :ground,
+      :dual_received, :pic, :day, :night, :cross_country, :actual_inst, :sim_inst, :no_inst_appr,
+      :landings_day, :landings_night, :total_duration, :remarks, :instructor)
  end

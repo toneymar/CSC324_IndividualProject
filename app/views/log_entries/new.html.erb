@@ -5,7 +5,7 @@
   <div class="col-md-6 col-md-offset-3">
     <%= form_for(@entry) do |f| %>
       <%= f.label :date %>
-      <%= f.date_field :date %>
+      <%= f.text_field :date, :placeholder => 'mm/dd/yyyy' %>
 
       <%= f.label :acft_model, "Aircraft Model" %>
       <%= f.text_field :acft_model %>

@@ -6,7 +6,7 @@
     <%= form_for(@entry) do |f| %>
 
     <%= f.label :date %>
-    <%= f.date_field :date %>
+    <%= f.text_field :date %>
 
     <%= f.label :acft_model, "Aircraft Model" %>
     <%= f.text_field :acft_model %>
@@ -68,7 +68,7 @@
     <%= f.label :instructor, "Instructor" %>
     <%= f.text_field :instructor %>
 
-    <%= f.submit "Save", class: "btn btn-primary"  %>
+    <%= f.submit "Save Changes", class: "btn btn-primary"  %>
     <% end %>
     <center> <br>
       <%= link_to "Cancel", '/log', class: "btn btn-primary btn-block" %>

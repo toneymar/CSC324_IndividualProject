@@ -1,0 +1,90 @@
+<% provide(:title, 'Entry Details') %>
+<h1>Entry Details</h1>
+
+
+<table class = "table">
+  <tr>
+    <th>Date</th>
+    <td><%= @entry.date %></td>
+  </tr>
+  <tr>
+    <th>Aircraft Model</th>
+    <td><%= @entry.acft_model %></td>
+  </tr>
+  <tr>
+    <th>Aircraft Identification</th>
+    <td><%= @entry.acft_ident %></td>
+  </tr>
+  <tr>
+    <th>From (Departure Point)</th>
+    <td><%= @entry.from %></td>
+  </tr>
+  <tr>
+    <th>To (Destination)</th>
+    <td><%= @entry.to %></td>
+  </tr>
+  <tr>
+    <th>Time Single-Engine Land Aircraft (hrs)</th>
+    <td><%= @entry.sel %></td>
+  </tr>
+  <tr>
+    <th>Time Multi-Engine Land Aircraft (hrs)</th>
+    <td><%= @entry.mel %></td>
+  </tr>
+  <tr>
+    <th>Time Ground Instruction (hrs)</th>
+    <td><%= @entry.ground %></td>
+  </tr>
+  <tr>
+    <th>Time Dual Instruction Received (hrs)</th>
+    <td><%= @entry.dual_received %></td>
+  </tr>
+  <tr>
+    <th>Time Pilot-In-Command (hrs)</th>
+    <td><%= @entry.pic %></td>
+  </tr>
+  <tr>
+    <th>Daytime (hrs)</th>
+    <td><%= @entry.day %></td>
+  </tr>
+  <tr>
+    <th>Nighttime (hrs)</th>
+    <td><%= @entry.night %></td>
+  </tr>
+  <tr>
+    <th>Time Cross-Country Flight (hrs)</th>
+    <td><%= @entry.cross_country %></td>
+  </tr>
+  <tr>
+    <th>Time Actual Instrument Flight (hrs)</th>
+    <td><%= @entry.actual_inst %></td>
+  </tr>
+  <tr>
+    <th>Time Simulated Instrument Flight (hrs)</th>
+    <td><%= @entry.sim_inst %></td>
+  </tr>
+  <tr>
+    <th>Number of Instrument Approaches</th>
+    <td><%= @entry.no_inst_appr %></td>
+  </tr>
+  <tr>
+    <th>Number of Daytime Landings</th>
+    <td><%= @entry.landings_day %></td>
+  </tr>
+  <tr>
+    <th>Number of Nighttime Landings</th>
+    <td><%= @entry.landings_night %></td>
+  </tr>
+  <tr>
+    <th>Total Duration (hrs)</th>
+    <td><%= @entry.total_duration %></td>
+  </tr>
+  <tr>
+    <th>Remarks</th>
+    <td><%= @entry.remarks %></td>
+  </tr>
+  <tr>
+    <th>Instructor</th>
+    <td><%= @entry.instructor %></td>
+  </tr>
+</table>

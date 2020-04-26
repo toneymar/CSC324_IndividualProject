@@ -121,3 +121,34 @@ input, textarea, select, .uneditable-input {
 input {
   height: auto !important;
 }
+
+/* tables */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  overflow: hidden;
+}
+
+table thead tr {
+  background-color: #00B8FF;
+  text-align: left;
+  font-weight: bold;
+}
+
+table th,
+table td {
+  padding: 12px 15px;
+}
+
+table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+table tbody tr:last-of-type {
+  border-bottom: 2px solid #00B8FF;
+}

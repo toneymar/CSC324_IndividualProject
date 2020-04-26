@@ -1,14 +1,14 @@
- test1 = LogEntry.create(date: "2019-07-17", acft_model: "C150", acft_ident: "N66589", from: "7S3", to: "7S3",
+ test1 = LogEntry.create(date: "07/17/2019", acft_model: "C150", acft_ident: "N66589", from: "7S3", to: "7S3",
  sel: 1.1, mel: 0, ground: 0, dual_received: 1.1, pic: 0, day: 0.7, night: 0.4, cross_country: 0,
  actual_inst: 0, sim_inst: 0.2, no_inst_appr: 0, landings_day: 2, landings_night: 1, total_duration: 1.1,
  remarks: "Inst hood, traffic patterns and landings at large towered airport (KPDX), night flying", instructor: "Cameron Allison")
 
- test2 = LogEntry.create(date: "2019-07-26", acft_model: "C172", acft_ident: "N65KD", from: "7S3", to: "7S3",
+ test2 = LogEntry.create(date: "07/26/2019", acft_model: "C172", acft_ident: "N65KD", from: "7S3", to: "7S3",
  sel: 2.3, mel: 0, ground: 0, dual_received: 2.3, pic: 0, day: 2.3, night: 0, cross_country: 2.3,
  actual_inst: 0.1, sim_inst: 0, no_inst_appr: 0, landings_day: 2, landings_night: 0, total_duration: 2.1,
  remarks: "Cross country to KONP, instrument flying", instructor: "Cameron Allison")
 
- test3 = LogEntry.create(date: "2019-08-21", acft_model: "C150", acft_ident: "N66589", from: "7S3", to: "7S3",
+ test3 = LogEntry.create(date: "08/21/2019", acft_model: "C150", acft_ident: "N66589", from: "7S3", to: "7S3",
  sel: 1.5, mel: 0, ground: 0, dual_received: 1.5, pic: 0, day: 0.7, night: 0.7, cross_country: 0,
  actual_inst: 0.5, sim_inst: 0, no_inst_appr: 1, landings_day: 0, landings_night: 1, total_duration: 1.5,
  remarks: "Flight to KTMK, VOR/DME into KHIO", instructor: "Cameron Allison")
