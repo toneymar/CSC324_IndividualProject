@@ -1,0 +1,64 @@
+<%= form_for(@entry) do |f| %>
+
+<%= f.label :date %>
+<%= f.text_field :date, :placeholder => 'mm/dd/yyyy' %>
+
+<%= f.label :acft_model, "Aircraft Model" %>
+<%= f.text_field :acft_model %>
+
+<%= f.label :acft_ident, "Aircraft Identification" %>
+<%= f.text_field :acft_ident %>
+
+<%= f.label :from, "From (Departure Point)" %>
+<%= f.text_field :from %>
+
+<%= f.label :to, "To (Destination)" %>
+<%= f.text_field :to %>
+
+<%= f.label :sel, "Time Single-Engine Land Aircraft (hrs)" %>
+<%= f.number_field :sel, step: 0.1 %>
+
+<%= f.label :mel, "Time Multi-Engine Land Aircraft (hrs)" %>
+<%= f.number_field :mel, step: 0.1 %>
+
+<%= f.label :ground, "Time Ground Instruction (hrs)" %>
+<%= f.number_field :ground, step: 0.1 %>
+
+<%= f.label :dual_received, "Time Dual Instruction Received (hrs)" %>
+<%= f.number_field :dual_received, step: 0.1 %>
+
+<%= f.label :pic, "Time Pilot-In-Command (hrs)" %>
+<%= f.number_field :pic, step: 0.1 %>
+
+<%= f.label :day, "Daytime (hrs)" %>
+<%= f.number_field :day, step: 0.1 %>
+
+<%= f.label :night, "Nighttime (hrs)" %>
+<%= f.number_field :night, step: 0.1 %>
+
+<%= f.label :cross_country, "Time Cross-Country Flight (hrs)" %>
+<%= f.number_field :cross_country, step: 0.1 %>
+
+<%= f.label :actual_inst, "Time Actual Instrument Flight (hrs)" %>
+<%= f.number_field :actual_inst, step: 0.1 %>
+
+<%= f.label :sim_inst, "Time Simulated Instrument Flight (hrs)" %>
+<%= f.number_field :sim_inst, step: 0.1 %>
+
+<%= f.label :no_inst_appr, "Number of Instrument Approaches" %>
+<%= f.number_field :no_inst_appr, step: 1 %>
+
+<%= f.label :landings_day, "Number of Daytime Landings" %>
+<%= f.number_field :landings_day, step: 1 %>
+
+<%= f.label :landings_night, "Number of Nighttime Landings" %>
+<%= f.number_field :landings_night, step: 1 %>
+
+<%= f.label :total_duration, "Total Duration (hrs)" %>
+<%= f.number_field :total_duration, step: 0.1 %>
+
+<%= f.label :remarks, "Remarks" %>
+<%= f.text_field :remarks %>
+
+<%= f.label :instructor, "Instructor" %>
+<%= f.text_field :instructor %>
